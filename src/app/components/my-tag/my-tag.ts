@@ -60,7 +60,7 @@ import {CommonModule} from '@angular/common';
   `]
 })
 export class MyTag {
-  @Input() text: string = '标签';
+  @Input() text: string = 'Tag';
   @Input() type: string = '';
   @Input() remove:boolean = false
   getremove(){
