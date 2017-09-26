@@ -25,12 +25,12 @@ import {MyGoTopModule} from '../components/my-gotop/my-gotop';
     CommonModule,
     RouterModule.forChild(workspaceRoutes),
 
-    SharedModule,        //  peimrNG 手风琴
-    AccordionModule,     //  peimrNG 手风琴
-    GrowlModule,         //  peimrNG msg提示
-    TooltipModule,       //  Tooltip 提示
-    MyInformationModule, //  头部消息
-    MyGoTopModule,       //回到顶部组件
+    SharedModule,        
+    AccordionModule,     //  primeNG Accordion
+    GrowlModule,         //  primeNG msg
+    TooltipModule,       //  Tooltip
+    MyInformationModule, //  Mensagem principal
+    MyGoTopModule,       //  Principais componentes
   ],
   exports: [],
   declarations: [
