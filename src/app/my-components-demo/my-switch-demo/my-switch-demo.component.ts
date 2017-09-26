@@ -7,11 +7,11 @@ import {Component, OnInit} from '@angular/core';
       <h1>my-switch </h1>
       
       <h3>
-        开关
+        Switch
       </h3>
     </div>
     <div class="main">
-      <h3>示例1</h3>
+      <h3>Exemplo 1</h3>
       
       
       <my-switch checked></my-switch>
@@ -21,7 +21,7 @@ import {Component, OnInit} from '@angular/core';
           &lt;my-switch checked&gt;&lt;/my-switch&gt;  &lt;my-switch [checked]="false"&gt;&lt;/my-switch&gt;
       </pre>
       
-      <h3>示例2</h3>
+      <h3>Exemplo 2</h3>
       
       
       <my-switch disabled></my-switch>
@@ -32,7 +32,7 @@ import {Component, OnInit} from '@angular/core';
           &lt;my-switch disabled&gt;&lt;/my-switch&gt;  &lt;my-switch checked [disabled]="true"&gt;&lt;/my-switch&gt;
       </pre>
       
-      <h3>示例3</h3>
+      <h3>Exemplo 3</h3>
       
       
       <my-switch [(ngModel)]="enable"></my-switch>
@@ -43,7 +43,7 @@ import {Component, OnInit} from '@angular/core';
           &lt;my-switch [(ngModel)]="enable"&gt;&lt;/my-switch&gt;
       </pre>
       
-      <h3>示例4事件</h3>
+      <h3>Exemplo 4 - evento</h3>
       
       
       <my-switch (change)="onChange()"></my-switch>
@@ -53,17 +53,17 @@ import {Component, OnInit} from '@angular/core';
       <pre>
           &lt;my-switch (change)="onChange()"&gt;&lt;/my-switch&gt;
       </pre>
-      <h3>示例5onTextoffText</h3>
+      <h3>Exemplo 5 -onText offText</h3>
       
       
-      <my-switch onText="是" offText="否"></my-switch>
+      <my-switch onText="Sim" offText="Não"></my-switch>
       
       
       <pre>
-          &lt;my-switch onText="是" offText="否"&gt;&lt;/my-switch&gt;   &lt;my-switch offText="否"&gt;&lt;/my-switch&gt;
+          &lt;my-switch onText="Sim" offText="Não"&gt;&lt;/my-switch&gt;   &lt;my-switch offText="Não"&gt;&lt;/my-switch&gt;
       </pre>
       
-      <h3>示例6reverse</h3>
+      <h3>Exemplo 6 - reverso</h3>
       
       
       <my-switch reverse></my-switch>
@@ -73,7 +73,7 @@ import {Component, OnInit} from '@angular/core';
           &lt;my-switch reverse&gt;&lt;/my-switch&gt;
       </pre>
       
-      <h3>示例7color</h3>
+      <h3>Exemplo 7 - Cor</h3>
       
       
       <my-switch></my-switch>
@@ -84,7 +84,7 @@ import {Component, OnInit} from '@angular/core';
       <pre>
           &lt;my-switch &gt;&lt;/my-switch&gt;   &lt;my-switch  color="blue"&gt;&lt;/my-switch&gt;    &lt;my-switch color="red"&gt;&lt;/my-switch&gt;
       </pre>
-      <h3>示例8switchColor</h3>
+      <h3>Exemplo 8 - switchColor</h3>
       
       
       <my-switch switchColor="red"></my-switch>
@@ -95,92 +95,92 @@ import {Component, OnInit} from '@angular/core';
           &lt;my-switch switchColor="red"&gt;&lt;/my-switch&gt;   &lt;my-switch  switchColor="blue"&gt;&lt;/my-switch&gt;
       </pre>
       
-      <h3>引入</h3>
+      <h3>Introdução</h3>
       
       <pre>
           MyUiSwitchComponentModule
       </pre>
       
-      <h3>属性</h3>
+      <h3>Propriedade</h3>
       
       <table class="dataintable">
         <tbody>
         <tr>
-          <th>Name</th>
-          <th>Type</th>
+          <th>Nome</th>
+          <th>Tipo</th>
           <th>Default</th>
-          <th>Description</th>
+          <th>Descrição</th>
         </tr>
         <tr>
           <td>checked</td>
           <td>boolean</td>
           <td>false</td>
-          <td>选中状态</td>
+          <td>Selecione o status</td>
         </tr>
         <tr>
           <td>disabled</td>
           <td>boolean</td>
           <td>false</td>
-          <td>禁用状态</td>
+          <td>desativado</td>
         </tr>
         <tr>
           <td>[(ngModel)]</td>
           <td></td>
           <td></td>
-          <td>支持绑定</td>
+          <td>binding</td>
         </tr>
         <tr>
           <td>(change)</td>
           <td></td>
           <td></td>
-          <td>支持(change)事件</td>
+          <td>Evento de suporte(change)</td>
         </tr>
         <tr>
           <td>reverse</td>
           <td></td>
           <td></td>
-          <td>翻转</td>
+          <td>Virar</td>
         </tr>
         <tr>
           <td>color</td>
           <td>string</td>
           <td>blue</td>
-          <td>true 时 颜色</td>
+          <td>true</td>
         </tr>
         
         <tr>
           <td>switchColor</td>
           <td>string</td>
           <td>#fff</td>
-          <td>开关中间 圆的 原色</td>
+          <td>Cor do Centro</td>
         </tr>
         <tr>
           <td>onText</td>
           <td>string</td>
           <td>ON</td>
-          <td>开时文字</td>
+          <td>Liga texto</td>
         </tr>
         <tr>
           <td>offText</td>
           <td>string</td>
           <td>OFF</td>
-          <td>关时文字</td>
+          <td>Desliga texto</td>
         </tr>
         
         </tbody>
       </table>
       
-      <h3>样式</h3>
+      <h3>Estilo</h3>
       
       <table class="dataintable">
         <tbody>
         <tr>
-          <th>Name</th>
-          <th>Description</th>
+          <th>Nome</th>
+          <th>Descrição</th>
         </tr>
         <tr>
           <td>.switch</td>
-          <td>开关</td>
+          <td>Switch</td>
         
         </tr>
         
