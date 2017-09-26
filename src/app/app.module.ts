@@ -48,7 +48,7 @@ import {NgProgressModule} from 'ngx-progressbar';
   ],
   bootstrap: [AppComponent]
 })
-/**                     Recomenda-se colocar todos os servições no app.module
+/**                     Recomenda-se colocar todos os serviços no app.module
  *  Ajax                Serviço que encapsula http como ajax
  *  Preload             Serviço de pré-carga
  *  LoginService        Serviço de Login
