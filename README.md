@@ -5,22 +5,22 @@ Endereço de pré-visualização do projeto:http://1.myhbb.applinzi.com/dist1/lo
 Descrição do Projeto: Modelo de Projeto, mostando a criação de um projeto real, do zero ao processo de build, bem 
 como o uso básico do primeng.
 
-1 - O projeto temporariamente não mostra alguns dos componentes do ng4, mostra principalmente o uso do primeng e o uso
+1 - O projeto temporariamente não usa alguns dos componentes do ng4, mostra principalmente o uso do primeng e o uso
 simples do ng4, servindo para estudos iniciais.
 
-2,项目 , 展示了真实的增删改查 ,分页 ,等,数据是json格式,但是该写的都写了只差一个正确的接口
+2 - O projeto usa um CRUD real, paginação, etc., os dados em formato JSON.
 
-3,项目 展示了 登录 以及工作区域 子路由的配置关系
+3 - O projeto usa o relacionamento de configuração de sub-reoteamento do login e da área de trabalho.
 
-4,项目 展示了 若何把http封装成 一个公共的  ajax 
+4 - O projeto mostra como encapsular HTTP como um AJAX público.
 
-5,项目展示了 primeng 的引用 以及 他的常用组件的用法
+5 - O projeto usa a referência do primeng e o uso de seus componentes comuns.
 
-6,项目展示了 primeng 的 皮肤制作(都说要接近国情)
+6 - O projeto mostra a produção de SKIN do primeng (que se diz estar perto das condições normais de uso)
 
-7,当你用ng4开发后台的时候,不知道该选用什么UI,那么不妨看看 [primeNg](https://www.primefaces.org/primeng/#/)
+7 - Quando você usa o ng4 em backend, e não sabe qual UI escolher, então pode querer conhecer o  [primeNg](https://www.primefaces.org/primeng/#/)
 
-项目目前基于
+O projeto atualmente é baseado em:
 
 [Angular4](https://angular.cn/docs/ts/latest/quickstart.html) [Angular CLI]
 
@@ -30,15 +30,13 @@ simples do ng4, servindo para estudos iniciais.
 
 [js-base64](https://github.com/dankogai/js-base64) version `2.1.5`.[js-base64]
 
-[ngx-uploader](https://github.com/jkuri/ngx-uploader) version `^3.0.5`.[ngx-uploader]目前没写
+[ngx-uploader](https://github.com/jkuri/ngx-uploader) version `^3.0.5`.[ngx-uploader]
 
-[项目预览](http://1.myhbb.applinzi.com/dist1/index.html) version `1.1.0`.
+Demonstração (http://1.myhbb.applinzi.com/dist1/index.html) version `1.1.0`.
 
-[大漠老师NiceFish](http://git.oschina.net/mumu-osc/NiceFish) 
+## Download @angular/cli
 
-## 下载@angular/cli
-
-npm 下载   npm install -g @angular/cli
+npm Download  npm install -g @angular/cli
 
 如果下载cli失败,(公司网有可能被抢了),`请尝试管理员身份运行CMD` 尝试下载
 
