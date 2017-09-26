@@ -16,7 +16,7 @@ export class NgFormComponent implements OnInit {
 
   ngOnInit() {
   }
-  msgs: Message[] = [];                                  //消息
+  msgs: Message[] = [];              //Mensagem
   userNameModel:string
   doLogin(){
 
