@@ -16,7 +16,7 @@ export class DataTableService {
     return body || {};
   }
   
-  //数据获取
+  //Aquisição de dados
   private getUrl = 'assets/data.json';
   
   get(params): Promise<Car[]> {
@@ -25,7 +25,7 @@ export class DataTableService {
       .then(this.extractJson);
   }
   
-  //行业获取
+  //Acesso à indústria
   private getIndustriesUrl = 'assets/industries.json';
   
   getIndustries(): Promise<Car[]> {
@@ -34,7 +34,7 @@ export class DataTableService {
       .then(this.extractJson);
   }
   
-  //添加
+  //Adicionar
   private addUrl = 'add';
   
   add(params): Promise<Car> {
@@ -43,7 +43,7 @@ export class DataTableService {
       .then((res) => res);
   }
   
-  //编辑
+  //Editar
   private editUrl = 'edit';
   
   edit(params): Promise<Car> {
@@ -52,7 +52,7 @@ export class DataTableService {
       .then((res) => res);
   }
   
-  //删除
+  //Excluír
   private deleteUrl = 'delete';
   
   delete(params): Promise<Car> {
@@ -63,7 +63,7 @@ export class DataTableService {
     
   }
   
-  //最新省级 json  获取http://passer-by.com/data_location/list.json
+  //Última cidade json - Obter http://passer-by.com/data_location/list.json
   private citysUrl = 'http://passer-by.com/data_location/list.json';
   
   getCitys(): Promise<Car[]> {
