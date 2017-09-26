@@ -7,84 +7,84 @@ import {Component, OnInit} from '@angular/core';
       <h1>my-tag </h1>
       
       <h3>
-        标签
+        Tag
       </h3>
     </div>
     <div class="main">
-      <h3>示例1</h3>
+      <h3>Exemplo 1</h3>
       
    
         <my-tag></my-tag>
-        <my-tag text="通过" type="gray"></my-tag>
-        <my-tag text="通过" type="primary"></my-tag>
-        <my-tag text="通过" type="success"></my-tag>
-        <my-tag text="通过" type="warning"></my-tag>
-        <my-tag text="通过" type="danger"></my-tag>
+        <my-tag text="Permitido" type="gray"></my-tag>
+        <my-tag text="Permitido" type="primary"></my-tag>
+        <my-tag text="Permitido" type="success"></my-tag>
+        <my-tag text="Permitido" type="warning"></my-tag>
+        <my-tag text="Permitido" type="danger"></my-tag>
   
-        <my-tag text="不通过" type="danger" [remove]="true"></my-tag>
+        <my-tag text="Proibido" type="danger" [remove]="true"></my-tag>
     
       <pre>
           &lt;my-tag &gt;&lt;/my-tag&gt;
-          &lt;my-tag text="通过" type="gray"&gt;&lt;/my-tag&gt;
-          &lt;my-tag text="通过" type="primary"&gt;&lt;/my-tag&gt;
-          &lt;my-tag text="通过" type="success"&gt;&lt;/my-tag&gt;
-          &lt;my-tag text="通过" type="warning"&gt;&lt;/my-tag&gt;
-          &lt;my-tag text="通过" type="danger"&gt;&lt;/my-tag&gt;
+          &lt;my-tag text="Permitido" type="gray"&gt;&lt;/my-tag&gt;
+          &lt;my-tag text="Permitido" type="primary"&gt;&lt;/my-tag&gt;
+          &lt;my-tag text="Permitido" type="success"&gt;&lt;/my-tag&gt;
+          &lt;my-tag text="Permitido" type="warning"&gt;&lt;/my-tag&gt;
+          &lt;my-tag text="Permitido" type="danger"&gt;&lt;/my-tag&gt;
         
-         &lt;my-tag text="不通过" type="danger" [remove]="true"&gt;&lt;/my-tag&gt;
+         &lt;my-tag text="Proibido" type="danger" [remove]="true"&gt;&lt;/my-tag&gt;
       </pre>
       
       
       
-      <h3>引入</h3>
+      <h3>Introdução</h3>
   
       <pre>
           MyTagModule
       </pre>
   
-      <h3>属性</h3>
+      <h3>Propriedade</h3>
   
       <table class="dataintable">
         <tbody>
         <tr>
-          <th>Name</th>
-          <th>Type</th>
+          <th>Nome</th>
+          <th>Tipo</th>
           <th>Default</th>
-          <th>Description</th>
+          <th>Descrição</th>
         </tr>
         <tr>
           <td>text</td>
           <td>string</td>
-          <td>'标签'</td>
-          <td>标签中文字</td>
+          <td>'Tag'</td>
+          <td>Texto da Tag</td>
         </tr>
         <tr>
-          <td>type</td>
+          <td>Tipo</td>
           <td>string</td>
-          <td>无</td>
-          <td>标签颜色,有 空 gray primary success warning danger</td>
+          <td>Não</td>
+          <td>Cor da Tag, gray primary success warning danger</td>
         </tr>
         <tr>
           <td>[remove]</td>
           <td>boolean</td>
           <td>false</td>
-          <td>remove icon是否显示</td>
+          <td>remove icon se é exibido</td>
         </tr>
  
         </tbody>
       </table>
   
-      <h3>样式</h3>
+      <h3>Estilo</h3>
   
       <table class="dataintable">
         <tbody>
         <tr>
-          <th>Name</th>
-          <th>Description</th>
+          <th>Nome</th>
+          <th>Descrição</th>
         </tr>
         <tr>
           <td>.my-tag-box</td>
-          <td>标签</td>
+          <td>Tag</td>
           
         </tr>
        
