@@ -58,18 +58,18 @@ export class WorkspaceComponent implements OnInit {
   }
 
   /*************************  ********************************/
-  informationNumber: any = 18;                      //头部我的消息数量
-  menus: any[];                                    //菜单
-  msgs: Message[] = [];                            //消息
-  state: string = 'inactive';                      //菜单状态
-  pTooltipIf: boolean = false;                     //pTooltipIf状态
-  beforeUrl: string = beforeUrl;                   //api前缀地址
-  timeout: any;                                    //错误信息时间
-  realname: string;                                  //头部账号名字
+  informationNumber: any = 18;                      // número de mensagens
+  menus: any[];                                     // Menu
+  msgs: Message[] = [];                             // Mensagem
+  state: string = 'inactive';                       // Status do menu
+  pTooltipIf: boolean = false;                      // pTooltipIf Status
+  beforeUrl: string = beforeUrl;                    // Endereço API
+  timeout: any;                                     // Mensagem de erro (tempo)
+  realname: string;                                 // Nome Usuário Principal
   menumsg: string;
 
 
-  /************************* 获取菜单 ********************************/
+  /************************* Obtém o menu ********************************/
   getMenu() {
     if (sessionStorage.getItem('menu111')) {
       this.menus = JSON.parse(sessionStorage.getItem('menu111'));
@@ -79,7 +79,7 @@ export class WorkspaceComponent implements OnInit {
         .then(
           menus => this.menus = menus,
           error => {
-            this.menumsg = '获取菜单失败,请刷新再试';
+            this.menumsg = 'Falha ao obter Menu, tente novamente.';
           }
         )
         .then(() => {
@@ -91,10 +91,10 @@ export class WorkspaceComponent implements OnInit {
 
   }
 
-  /************************* 改变左侧菜单宽度 ********************************/
+  /************************* Alterar a largura do menu à esquerda ********************************/
   changeMenuWidth() {
     this.state = (this.state === 'active' ? 'inactive' : 'active');
-    //dom操作
+    //Operação DOM
     let fa = document.getElementsByClassName('ui-accordion-header');
     if (this.state == 'active') {
       for (let i = 0; i < fa.length; i++) {
@@ -109,7 +109,7 @@ export class WorkspaceComponent implements OnInit {
     }
   }
 
-  /************************* 退出登录 ********************************/
+  /************************* Encerrar Login ********************************/
   loginOut() {
     sessionStorage.removeItem('userToken');
     sessionStorage.removeItem('menu111');
