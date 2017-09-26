@@ -4,41 +4,41 @@
     "creatorId": null,
     "createTime": null,
     "modifyTime": null,
-    "name": "房产"
+    "name": "Propriedade"
   },
   {
     "id": 2,
     "creatorId": null,
     "createTime": null,
     "modifyTime": null,
-    "name": "家具"
+    "name": "Móveis"
   },
   {
     "id": 3,
     "creatorId": null,
     "createTime": null,
     "modifyTime": null,
-    "name": "建材"
+    "name": "Materiais de construção"
   },
   {
     "id": 4,
     "creatorId": null,
     "createTime": null,
     "modifyTime": null,
-    "name": "其它"
+    "name": "Outros"
   },
   {
     "id": 5,
     "creatorId": null,
     "createTime": null,
     "modifyTime": null,
-    "name": "建筑"
+    "name": "Edifício"
   },
   {
     "id": 6,
     "creatorId": null,
     "createTime": null,
     "modifyTime": null,
-    "name": "云舍易家"
+    "name": "Casa Fácil"
   }
 ]
