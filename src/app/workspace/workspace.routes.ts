@@ -12,17 +12,17 @@ export const workspaceRoutes = [
       {
         path: 'data-table',
         loadChildren: '../data-table/data-table.module#MyDataTableModule',
-        title: '普通表格'
+        title: 'Formulário Simples'
       },
       {
         path: 'primeng-form',
         loadChildren: '../form-primeng/form-primeng.module#FormPrimengModule',
-        title: 'primeng表格'
+        title: 'Formulário primeNG'
       },
       {
         path: 'ng-form',
         loadChildren: '../ng-form/ng-form.module#NgFormModule',
-        title: '验证'
+        title: 'Validação'
       },
       {
         path: 'input',
@@ -49,11 +49,11 @@ export const workspaceRoutes = [
       }, {
         path: 'citys',
         loadChildren: '../citys/citys.module#CitysModule',
-        title: '省级联动'
+        title: 'Cidades'
       }, {
         path: 'upload',
         loadChildren: '../upload/upload.module#UploadModule',
-        title: '上传'
+        title: 'Upload'
       },
       {
         path: 'data-table2',
@@ -63,23 +63,23 @@ export const workspaceRoutes = [
       }, {
         path: 'my-breadcrumb-demo',
         loadChildren: '../my-components-demo/my-breadcrumb-demo/my-breadcrumb-demo.module#MyBreadcrumbDemoModule',
-        title: '面包屑'
+        title: 'Breadcrumb'
       }, {
         path: 'my-switch-demo',
         loadChildren: '../my-components-demo/my-switch-demo/my-switch-demo.module#MySwitchDemoModule',
-        title: '开关'
+        title: 'Switch'
       }, {
         path: 'my-tag-demo',
         loadChildren: '../my-components-demo/my-tag-demo/my-tag-demo.module#MyTagDemoModule',
-        title: '标签'
+        title: 'Tag'
       }, {
         path: 'my-loading-demo',
         loadChildren: '../my-components-demo/my-loading-demo/my-loading-demo.module#MyLoadingDemoModule',
-        title: '加载'
+        title: 'Loading'
       }, {
         path: 'my-carousel-demo',
         loadChildren: '../my-components-demo/my-carousel-demo/my-carousel-demo.module#MyCarouselDemoModule',
-        title: '跑马灯'
+        title: 'Carousel'
       },
       {
         path: '**',
