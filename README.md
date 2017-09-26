@@ -1,10 +1,12 @@
 # angular4-primeng-admin
 
-项目地址预览地址:http://1.myhbb.applinzi.com/dist1/login
+Endereço de pré-visualização do projeto:http://1.myhbb.applinzi.com/dist1/login
 
-项目介绍:项目后台模板,展示了一个真实的项目模板,从零到bulid的过程,以及primeng的坑 , 
+Descrição do Projeto: Modelo de Projeto, mostando a criação de um projeto real, do zero ao processo de build, bem 
+como o uso básico do primeng.
 
-1,项目暂时不去展示ng4的一些组件,主要展示 primeng 的用法以及 ng4的简单用法,针对刚学习ng4的同学 
+1 - O projeto temporariamente não mostra alguns dos componentes do ng4, mostra principalmente o uso do primeng e o uso
+simples do ng4, servindo para estudos iniciais.
 
 2,项目 , 展示了真实的增删改查 ,分页 ,等,数据是json格式,但是该写的都写了只差一个正确的接口
 
