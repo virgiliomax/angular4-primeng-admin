@@ -3,19 +3,19 @@
     <div class="ui-g">
       <div class="ui-g-12">
         <h1>
-          系统管理后台
+          Gestão do Sistema
         </h1>
       </div>
       <div class="ui-g-12">
         <div class="input-box">
           <span class="fa fa-user"></span>
-          <input type="text" placeholder="请输入用户名" [(ngModel)]="nameModel" name="nameModel" (focus)="inputFocus()">
+          <input type="text" placeholder="Digite um nome de usuário" [(ngModel)]="nameModel" name="nameModel" (focus)="inputFocus()">
         </div>
       </div>
       <div class="ui-g-12">
         <div class="input-box">
           <span class="fa fa-unlock-alt "></span>
-          <input type="password" placeholder="请输入密码" [(ngModel)]="psModel" name="psModel" (focus)="inputFocus()">
+          <input type="password" placeholder="Digite sua senha" [(ngModel)]="psModel" name="psModel" (focus)="inputFocus()">
         </div>
       </div>
       <div class="ui-g-12" style="color: #FF4949;height: 33px">
@@ -25,13 +25,13 @@
         <button  type="button" (click)="login()">{{btnLogin}}</button>
       </div>
       <div class="ui-g-10">
-        默认账号:binbinadmin
+        Usuário padrão:binbinadmin
       </div>
       <div class="ui-g-10">
-        默认密码:123456
+        Senha padrão:123456
       </div>
       <div class="ui-g-10">
-        数据用的是json,但是该写的都写了,差的就是一个正确的接口
+        Os dados estão em formato JSON.
       </div>
     </div>
   </form>
