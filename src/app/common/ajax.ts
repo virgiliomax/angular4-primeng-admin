@@ -1,7 +1,7 @@
 /*
- * 封装一个 http 服务
- * ngx-toastr    一个无依赖的全局信息提示组件  https://cipchk.github.io/ngx-notify/
- * 将错误信息字符串返回给 component 层的操作终究麻烦
+ * Encapsular um serviço http
+ * ngx-toastr    Um componente global de informação não relacionado  https://cipchk.github.io/ngx-notify/
+ * Retorna a seqüência de mensagem de erro para o componente.
  *
  * */
 import 'rxjs/add/operator/catch';
@@ -12,11 +12,11 @@ import 'rxjs/add/operator/timeout';
 import {ToastrService} from 'ngx-toastr';
 @Injectable()
 export class Ajax {
-  url: string = beforeUrl;                                //接口之前的部分
-  Headers: any = {                                        //Headers
+  url: string = beforeUrl;                                // Interface
+  Headers: any = {                                        // Headers
     'Content-Type': 'application/json', 'Authorization': sessionStorage.getItem('userToken')
   };
-  timeout: number = 5000;                                 //超时时间
+  timeout: number = 5000;                                 // Tempo de Espera
   
   constructor(public http: Http, private toastr: ToastrService) {
   }
@@ -35,7 +35,7 @@ export class Ajax {
     return this.http.get(this.url + endpoint, options).timeout(this.timeout).catch(
       (error: Response | any) => {
         if (error.status == 0) {
-          taht.toastr.info('请求未执行,1:服务未启动2:api地址错误');
+          taht.toastr.info('Requisição não executada, 1: Serviço não iniciado 2: Erro de endereço api');
         } else {
           if (error._body) {
             const err = JSON.parse(error._body);
@@ -46,12 +46,12 @@ export class Ajax {
             }
           } else {
             if (error.status >= 500) {
-              taht.toastr.error('服务器超时');
+              taht.toastr.error('A conexão com o Servidor expirou');
             } else {
               if (error.message == 'Timeout has occurred') {
-                taht.toastr.warning('服务器超时');
+                taht.toastr.warning('A conexão com o Servidor expirou');
               } else {
-                taht.toastr.warning('服务器错误');
+                taht.toastr.warning('Erro no Servidor.');
               }
             }
           }
@@ -67,7 +67,7 @@ export class Ajax {
     return this.http.post(this.url + endpoint, body, options).timeout(this.timeout).catch(
       (error: Response | any) => {
         if (error.status == 0) {
-          taht.toastr.info('请求未执行,1:服务未启动2:api地址错误');
+          taht.toastr.info('Requisição não executada, 1: Serviço não iniciado 2: Erro de endereço api');
         } else {
           if (error._body) {
             const err = JSON.parse(error._body);
@@ -78,12 +78,12 @@ export class Ajax {
             }
           } else {
             if (error.status >= 500) {
-              taht.toastr.error('服务器超时');
+              taht.toastr.error('A conexão com o Servidor expirou');
             } else {
               if (error.message == 'Timeout has occurred') {
-                taht.toastr.warning('服务器超时');
+                taht.toastr.warning('A conexão com o Servidor expirou');
               } else {
-                taht.toastr.warning('服务器错误');
+                taht.toastr.warning('Erro no Servidor.');
               }
             }
           }
@@ -99,7 +99,7 @@ export class Ajax {
     return this.http.put(this.url + endpoint, body, options).timeout(this.timeout).catch(
       (error: Response | any) => {
         if (error.status == 0) {
-          taht.toastr.info('请求未执行,1:服务未启动2:api地址错误');
+          taht.toastr.info('Requisição não executada, 1: Serviço não iniciado 2: Erro de endereço api');
         } else {
           if (error._body) {
             const err = JSON.parse(error._body);
@@ -110,12 +110,12 @@ export class Ajax {
             }
           } else {
             if (error.status >= 500) {
-              taht.toastr.error('服务器超时');
+              taht.toastr.error('A conexão com o Servidor expirou');
             } else {
               if (error.message == 'Timeout has occurred') {
-                taht.toastr.warning('服务器超时');
+                taht.toastr.warning('A conexão com o Servidor expirou');
               } else {
-                taht.toastr.warning('服务器错误');
+                taht.toastr.warning('Erro no Servidor.');
               }
             }
           }
@@ -132,7 +132,7 @@ export class Ajax {
     return this.http.delete(this.url + endpoint, options).timeout(this.timeout).catch(
       (error: Response | any) => {
         if (error.status == 0) {
-          taht.toastr.info('请求未执行,1:服务未启动2:api地址错误');
+          taht.toastr.info('Requisição não executada, 1: Serviço não iniciado 2: Erro de endereço api');
         } else {
           if (error._body) {
             const err = JSON.parse(error._body);
@@ -143,12 +143,12 @@ export class Ajax {
             }
           } else {
             if (error.status >= 500) {
-              taht.toastr.error('服务器超时');
+              taht.toastr.error('A conexão com o Servidor expirou');
             } else {
               if (error.message == 'Timeout has occurred') {
-                taht.toastr.warning('服务器超时');
+                taht.toastr.warning('A conexão com o Servidor expirou');
               } else {
-                taht.toastr.warning('服务器错误');
+                taht.toastr.warning('Erro no Servidor.');
               }
             }
           }
@@ -165,7 +165,7 @@ export class Ajax {
     return this.http.patch(this.url + endpoint, body, options).timeout(this.timeout).catch(
       (error: Response | any) => {
         if (error.status == 0) {
-          taht.toastr.info('请求未执行,1:服务未启动2:api地址错误');
+          taht.toastr.info('Requisição não executada, 1: Serviço não iniciado 2: Erro de endereço api');
         } else {
           if (error._body) {
             const err = JSON.parse(error._body);
@@ -176,12 +176,12 @@ export class Ajax {
             }
           } else {
             if (error.status >= 500) {
-              taht.toastr.error('服务器超时');
+              taht.toastr.error('A conexão com o Servidor expirou');
             } else {
               if (error.message == 'Timeout has occurred') {
-                taht.toastr.warning('服务器超时');
+                taht.toastr.warning('A conexão com o Servidor expirou');
               } else {
-                taht.toastr.warning('服务器错误');
+                taht.toastr.warning('Erro no Servidor.');
               }
             }
           }
