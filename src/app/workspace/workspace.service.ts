@@ -11,7 +11,7 @@ export class WorkspaceService {
   constructor(private http: Http) {
   }
 
-  //获取菜单
+  //Obtém o menu
   private menuUrl = 'assets/data/user-menu.json';
 
   getMenu(): Promise<any[]> {
@@ -25,13 +25,13 @@ export class WorkspaceService {
 
   }
 
-  //错误信息封装...目前是每一个service最下面面都有这句话
+  //Encapsulamento de mensagens de erro ...
   private handleError(error: Response | any) {
     let errMsg: string;
     if (error.status == 0) {
-      errMsg = `亲~~ 请求未执行,1:服务未启动接口2:api地址错误|error`;
+      errMsg = `Falha na Requesição, 1:Interface não inicializada 2:API não encontrada|error`;
     } else if (error._body.substring(0, 1) == '{') {
-      const err = JSON.parse(error._body).defaultMessage || '未知错误';
+      const err = JSON.parse(error._body).defaultMessage || 'Erro desconhecido';
       if (error.status >= 500) {
         errMsg = `${error.status} ${error.statusText} ${err}|warn`;
       } else if (error.status == 403) {
@@ -41,9 +41,9 @@ export class WorkspaceService {
       }
     } else {
       if (error.status >= 500) {
-        errMsg = `${error.status} ${error.statusText} 服务器超时|warn`;
+        errMsg = `${error.status} ${error.statusText} A conexão com o Servidor expirou|warn`;
       } else {
-        errMsg = `${error.status} ${error.statusText} 服务器错误|error`;
+        errMsg = `${error.status} ${error.statusText} Erro de Servidor|error`;
       }
     }
 
