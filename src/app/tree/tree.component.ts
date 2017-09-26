@@ -98,5 +98,5 @@ export class TreeComponent implements OnInit {
     }
   ];
   selectedFiles2: TreeNode;
-  msgs: Message[] = [];                                  //消息
+  msgs: Message[] = [];          //Mensagem
 }
