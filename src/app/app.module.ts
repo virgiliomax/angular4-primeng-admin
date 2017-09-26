@@ -33,7 +33,7 @@ import {NgProgressModule} from 'ngx-progressbar';
     ToastrModule.forRoot({
       timeOut: 2500,
       preventDuplicates: true
-    }), // 消息弹出
+    }), // Pop-up mensagem
     RouterModule.forRoot(
       appRoutes,
       {preloadingStrategy: Preload}
@@ -48,12 +48,12 @@ import {NgProgressModule} from 'ngx-progressbar';
   ],
   bootstrap: [AppComponent]
 })
-/**                     官方推荐将所有的服务放在 app.module 里
- *  Ajax                这是一个把http封装成ajax的服务
- *  Preload             这是一个延迟加载的服务
- *  LoginService        登录
- *  WorkspaceService    工作区域服务
- *  DataTableService    DataTable 服务
+/**                     Recomenda-se colocar todos os servições no app.module
+ *  Ajax                Serviço que encapsula http como ajax
+ *  Preload             Serviço de pré-carga
+ *  LoginService        Serviço de Login
+ *  WorkspaceService    Serviço de área de trabalho
+ *  DataTableService    Serviço de DataTable
  *
  *
  * */
