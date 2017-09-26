@@ -6,23 +6,23 @@ import {
   TabMenuModule,   //tabMenu
   AutoCompleteModule,
   ButtonModule,  //Button
-  PanelModule,     //容器
+  PanelModule,     //
   InputTextModule,
-  DataTableModule,  //表格
-  DialogModule,   //浮层
+  DataTableModule,  //
+  DialogModule,   //
   SplitButtonModule,
   TabViewModule,  //table
-  AccordionModule,//手风琴
+  AccordionModule,//
   SharedModule,
   CalendarModule,
-  GrowlModule,//弹出框
-  MultiSelectModule,//多选
-  ListboxModule,//多选框
-  DropdownModule,//下拉
-  CheckboxModule,//多选
+  GrowlModule,//
+  MultiSelectModule,//
+  ListboxModule,//
+  DropdownModule,//
+  CheckboxModule,//
   MessagesModule,//Messages
-  PaginatorModule,//分页
-  ConfirmDialogModule,//删除弹出框
+  PaginatorModule,//
+  ConfirmDialogModule,//
   InputTextareaModule,// InputTextarea
   OverlayPanelModule,
   TooltipModule,
