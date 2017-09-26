@@ -1,5 +1,5 @@
 /**
- * 这里可能放很多公用的api接口
+ * Pode ter várias API´s
  */
 import {Injectable} from '@angular/core';
 import {Http, Response, Headers, RequestOptions, Request} from '@angular/http';
@@ -10,7 +10,7 @@ import {beforeUrl} from "../common/public-data";
 @Injectable()
 export class LoginService {
   constructor(private http: Http) {}
-  //登录
+  //Login
   private loginUrl = 'assets/login.json';
   login(userToken:string): Promise<Car>{
     let headers = new Headers({ 'Content-Type': 'application/json' ,"Authorization": userToken});
