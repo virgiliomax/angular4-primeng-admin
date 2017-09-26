@@ -28,10 +28,10 @@ export class UploadComponent implements OnInit {
 
   ngOnInit() {
   }
-  msgs: Message[] = [];                                  //消息
+  msgs: Message[] = [];                 // Mensagem
   dialog: boolean = false;
   uploadNgIf: boolean = false;
-  spanSuccee: boolean = false;          //上传
+  spanSuccee: boolean = false;          // Carregar
   spanError: boolean = false;
   uploading: boolean = true;
   formData: FormData;
@@ -55,13 +55,13 @@ export class UploadComponent implements OnInit {
     if (output.type === 'done') {
       this.fileCount = this.fileCount + 1;
       if (output.file.responseStatus != 201) {
-        this.msg(4, '上传失败,服务器错误');
+        this.msg(4, 'O UPLOAD falhou, erro do Servidor.');
         window.setTimeout(() => {
           this.dialog = false;
         }, 200);
       } else {
         console.log(output.file);
-        //上传成功时候的 回调    你可以储存自己想要的东西
+        //Carregar uma chamada de retorno bem-sucedida. Você pode armazenar o que desejar.
         // this.fileArray.push({
         //   originImg: output.file.response.originImg,
         //   thumbnail: output.file.response.thumbnail,
@@ -70,7 +70,7 @@ export class UploadComponent implements OnInit {
         if (this.fileCount === this.fileNumber) {
           window.setTimeout(() => {
             this.dialog = false;
-            this.msg(1, '上传成功');
+            this.msg(1, 'UPLOAD realizado com sucesso.');
           }, 200);
         }
       }
@@ -113,18 +113,18 @@ export class UploadComponent implements OnInit {
     this.fileArray.splice(index, 1);
   }
 
-  /*无图片显示*/
+  /*Sem exibição de imagem*/
   errorImg(event) {
     event.srcElement.src = './assets/images/shop/img-no.png';
   }
 
-  /*关闭dialog回调*/
+  /*Callback Diálogo Fechar*/
   dialogHide(e) {
     this.uploadNgIf = false;
     this.files = [];
   }
-  /************************* 信息返回函数 ********************************/
-  timeout: any;                                          //错误信息 msg 时间超时
+  /************************* função de retorno de informação ********************************/
+  timeout: any;                                        // Tempo de espera da mensagem de erro.
 
   msg(num, msg) {
     let type = 'info';
