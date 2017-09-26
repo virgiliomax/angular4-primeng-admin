@@ -19,12 +19,12 @@
           "spaceId": 46,
           "attributeId": 5,
           "description": "23",
-          "attributeName": "水化热",
-          "attributeCategoryName": "安全性",
-          "attributeDescription": "指物质与水化合时所放出的热。"
+          "attributeName": "Calor de hidratação",
+          "attributeCategoryName": "Segurança",
+          "attributeDescription": "Refere-se ao material e à água quando o calor é liberado."
         }
       ],
-      "categoryName": "多功能房"
+      "categoryName": "Sala multifunções"
     },
     {
       "id": 45,
@@ -42,12 +42,12 @@
           "spaceId": 45,
           "attributeId": 5,
           "description": null,
-          "attributeName": "水化热",
-          "attributeCategoryName": "安全性",
-          "attributeDescription": "指物质与水化合时所放出的热。"
+          "attributeName": "Calor de hidratação",
+          "attributeCategoryName": "Segurança",
+          "attributeDescription": "Refere-se ao material e à água quando o calor é liberado."
         }
       ],
-      "categoryName": "多功能房"
+      "categoryName": "Sala multifunções"
     },
     {
       "id": 44,
@@ -65,12 +65,12 @@
           "spaceId": 44,
           "attributeId": 5,
           "description": null,
-          "attributeName": "水化热",
-          "attributeCategoryName": "安全性",
-          "attributeDescription": "指物质与水化合时所放出的热。"
+          "attributeName": "Calor de hidratação",
+          "attributeCategoryName": "Segurança",
+          "attributeDescription": "Refere-se ao material e à água quando o calor é liberado."
         }
       ],
-      "categoryName": "多功能房"
+      "categoryName": "Sala multifunções"
     },
     {
       "id": 9,
@@ -80,7 +80,7 @@
       "categoryId": 14,
       "status": "CHECK_PENDING",
       "spaceAttributeRelationModels": [],
-      "categoryName": "多功能房"
+      "categoryName": "Sala multifunções"
     }
   ],
   "spaceCategoryIds": null,
