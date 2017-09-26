@@ -4,10 +4,10 @@
   <my-breadcrumb name1="tree" name2="tree"></my-breadcrumb>
 
   <p-treeTable [value]="files4" selectionMode="checkbox" [(selection)]="selectedFiles2" [style]="{'margin-top':'50px'}">
-    <p-header>Checkbox Selection</p-header>
-    <p-column field="name" header="Name"></p-column>
-    <p-column field="size" header="Size"></p-column>
-    <p-column field="type" header="Type"></p-column>
+    <p-header>Caixa de Seleção</p-header>
+    <p-column field="name" header="Nome"></p-column>
+    <p-column field="size" header="Tamanho"></p-column>
+    <p-column field="type" header="Tipo"></p-column>
   </p-treeTable>
   <p>Selected Nodes: <span *ngFor="let file of selectedFiles2">{{file.data.name}} </span></p>
 </div>
