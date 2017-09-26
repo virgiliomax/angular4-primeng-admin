@@ -1,6 +1,6 @@
 [
   {
-    "name": "数据管理",
+    "name": "Gestão de Dados",
     "icon": "fa-database",
     "children": [
       {
@@ -8,11 +8,11 @@
         "link": "data-table"
       },
       {
-        "name": "primeng验证",
+        "name": "primeng validação",
         "link": "primeng-form"
       },
       {
-        "name": "表单验证",
+        "name": "Validação de formulário",
         "link": "ng-form"
       },
       {
@@ -20,19 +20,19 @@
         "link": "input"
       },
       {
-        "name": "表格多行",
+        "name": "Tabela de linhas múltiplas",
         "link": "data-table2"
       },
       {
-        "name": "图标",
+        "name": "Ícone",
         "link": "icon"
       },
       {
-        "name": "颜色",
+        "name": "Cor",
         "link": "color"
       },
       {
-        "name": "省级联动",
+        "name": "Cidades",
         "link": "citys"
       }
     ]
@@ -58,33 +58,33 @@
     ]
   },
   {
-    "name": "上传",
+    "name": "Upload",
     "icon": "fa-upload",
     "children": [
       {
-        "name": "上传",
+        "name": "Upload",
         "link": "upload"
       }
     ]
   },
   {
-    "name": "组件",
+    "name": "Componentes",
     "icon": "fa-building",
     "children": [
       {
-        "name": "面包屑",
+        "name": "Breadcrumb",
         "link": "my-breadcrumb-demo"
       },
       {
-        "name": "开关",
+        "name": "Switch",
         "link": "my-switch-demo"
       },
       {
-        "name": "标签",
+        "name": "Tag",
         "link": "my-tag-demo"
       },
       {
-        "name": "加载",
+        "name": "Loading",
         "link": "my-loading-demo"
       }
     ]
