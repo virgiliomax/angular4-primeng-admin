@@ -1,37 +1,37 @@
 [
   {
     "data": {
-      "name": "Documents",
+      "name": "Documentos",
       "id": "75kb",
-      "type": "Folder"
+      "type": "Pasta"
     },
     "children": [
       {
         "data": {
-          "name": "Work",
+          "name": "Trabalho",
           "id": "55kb",
-          "type": "Folder"
+          "type": "Pasta"
         },
         "children": [
           {
             "data": {
               "name": "Expenses.doc",
               "id": "30kb",
-              "type": "Document"
+              "type": "Documento"
             },
             "children": [
               {
                 "data": {
                   "name": "Expenses.doc",
                   "id": "30kb",
-                  "type": "Document"
+                  "type": "Documento"
                 },
                 "children": [
                   {
                     "data": {
                       "name": "Expenses.doc",
                       "id": "30kb",
-                      "type": "Document"
+                      "type": "Documento"
                     }
                   }
                 ]
