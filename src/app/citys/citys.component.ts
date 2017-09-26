@@ -16,9 +16,9 @@ export class CitysComponent implements OnInit {
     this.getCitys();
   }
   
-  msgs: Message[] = [];                                  //消息
-  /************************* 省级联动 ********************************/
-  citys: any;                                             //省级 数据
+  msgs: Message[] = [];                                    // Mensagem
+  /************************* Cidades ********************************/
+  citys: any;                                             // Dados Cidades
   city1Array: any = [];
   city1NgModel: any;
   city2Array: any = [];
@@ -27,12 +27,12 @@ export class CitysComponent implements OnInit {
   city3Array: any = [];
   city3NgModel: any;
   city3Disabled: boolean = true;
-  //获取省市区县数据
+  //Obtendo dados das cidades e vilareijos.
   getCitys() {
     this.myService.getCitys()
       .then(citys => {
           this.citys = citys;
-        }, res => this.msg(4, '省市县数据获取失败')
+        }, res => this.msg(4, 'Aquisção de dados falhou!')
       )
       .then(
         () => {
@@ -49,7 +49,7 @@ export class CitysComponent implements OnInit {
       );
   }
   
-  //省级 或 直辖市 级 下拉框change 事件
+  //Nível cidade ou vilareijo (evento change)
   city1onChange() {
     this.city2Array = [];
     for (let i in  this.citys) {
@@ -83,7 +83,7 @@ export class CitysComponent implements OnInit {
     }
   }
   
-  //第二个个下拉框change 事件
+  // Segundo drop-down - (evento change)
   city2onChange() {
     this.city3Array = [];
     for (let i in  this.citys) {
@@ -103,7 +103,7 @@ export class CitysComponent implements OnInit {
     }
   }
   
-  /************************* 信息返回函数 ********************************/
+  /************************* Função de Retorno ********************************/
   timeout: any;
   
   msgError(error) {
