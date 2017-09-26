@@ -1,4 +1,4 @@
-//预加载   我们想到workspace时候的500ms后预加载 所有preload =true 的 组件
+//Pré-carregamento   我们想到workspace时候的500ms后预加载 所有preload =true 的 组件
 import 'rxjs/add/observable/of';
 import {Injectable} from '@angular/core';
 import {PreloadingStrategy, Route} from '@angular/router';
