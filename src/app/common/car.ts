@@ -1,7 +1,7 @@
 import {EventEmitter} from '@angular/core';
 
 /**
- *数据类型
+ *Tipo de dados
  */
 export interface Car {
   name?: string;
@@ -58,7 +58,7 @@ export interface Car {
   
 }
 /**
- *数据类型 this.cars.data
+ *Tipo de dados this.cars.data
  */
 export interface Data {
   name?: string;
@@ -83,7 +83,7 @@ export interface Data {
 }
 
 /**
- *  引用 primeng common api.ts
+ *  Citações primeng common api.ts
  */
 export interface MenuItem {
   label?: string;
@@ -111,5 +111,5 @@ export interface SelectItem {
 }
 
 /**
- *引用 primeng common api.ts   end
+ *Citações primeng common api.ts   end
  */
